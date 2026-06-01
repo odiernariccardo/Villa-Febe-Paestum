@@ -754,7 +754,7 @@ h3 {
 /* =========================
    VERSIONE TELEFONO COME PC
    Il sito mantiene la larghezza desktop.
-   Da telefono si puÃ² scorrere lateralmente.
+   Da telefono si puÃƒÂ² scorrere lateralmente.
    ========================= */
 
 @media (max-width: 920px) {
@@ -887,10 +887,9 @@ h3 {
   .lightbox-next {
     right: 24px;
   }
-
-  /* Testo piÃ¹ grande da telefono */
+  /* TESTO MOLTO PIÃ™ GRANDE DA TELEFONO */
   body {
-    font-size: 22px !important;
+    font-size: 34px !important;
   }
 
   p,
@@ -906,56 +905,66 @@ h3 {
   .excursion-content p,
   .reviews-box p,
   .hero-subtitle,
-  .mini-list span {
-    font-size: 1.25rem !important;
-    line-height: 1.7 !important;
+  .mini-list span,
+  .section-title p,
+  .form-note {
+    font-size: 30px !important;
+    line-height: 1.75 !important;
   }
 
   h1 {
-    font-size: 8rem !important;
+    font-size: 150px !important;
     line-height: 0.9 !important;
   }
 
   h2 {
-    font-size: 4.2rem !important;
+    font-size: 76px !important;
     line-height: 1.05 !important;
   }
 
   h3 {
-    font-size: 1.85rem !important;
+    font-size: 42px !important;
     line-height: 1.25 !important;
   }
 
   .eyebrow {
-    font-size: 1.05rem !important;
+    font-size: 25px !important;
+    letter-spacing: 0.12em !important;
   }
 
   .distance-cards strong,
   .distance-strip strong {
-    font-size: 2rem !important;
+    font-size: 46px !important;
   }
 
   .distance-cards span,
   .distance-strip span {
-    font-size: 1.15rem !important;
+    font-size: 27px !important;
     line-height: 1.45 !important;
   }
 
   .logo strong {
-    font-size: 1.35rem !important;
+    font-size: 30px !important;
   }
 
   .logo small {
-    font-size: 1.05rem !important;
+    font-size: 24px !important;
   }
 
   .contact-row small {
-    font-size: 1.05rem !important;
+    font-size: 25px !important;
+  }
+
+  .contact-row span {
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 34px !important;
   }
 
   .btn {
-    min-height: 62px !important;
-    padding: 18px 28px !important;
+    min-height: 82px !important;
+    padding: 24px 38px !important;
+    font-size: 30px !important;
   }
 
   .service-card,
@@ -963,6 +972,13 @@ h3 {
   .reviews-box,
   .contact-form,
   .mini-list span {
-    font-size: 1.2rem !important;
+    font-size: 30px !important;
   }
+
+  .service-icon {
+    width: 78px !important;
+    height: 78px !important;
+    font-size: 38px !important;
+  }
+
 }
