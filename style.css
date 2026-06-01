@@ -23,7 +23,9 @@
   box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -34,10 +36,13 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+}
 
 .site-header {
   position: fixed;
@@ -92,7 +97,9 @@ a { color: inherit; }
   transition: color 0.2s ease;
 }
 
-.nav a:hover { color: var(--terracotta); }
+.nav a:hover {
+  color: var(--terracotta);
+}
 
 .menu-toggle {
   display: none;
@@ -153,7 +160,9 @@ a { color: inherit; }
   margin-bottom: 10px;
 }
 
-.hero .eyebrow { color: #ffd7a8; }
+.hero .eyebrow {
+  color: #ffd7a8;
+}
 
 h1 {
   font-size: clamp(3.4rem, 9vw, 7.4rem);
@@ -180,7 +189,9 @@ h3 {
   color: rgba(255, 255, 255, 0.92);
 }
 
-.hero-subtitle strong { color: #fff; }
+.hero-subtitle strong {
+  color: #fff;
+}
 
 .hero-actions,
 .booking-actions {
@@ -204,7 +215,9 @@ h3 {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.btn:hover { transform: translateY(-3px); }
+.btn:hover {
+  transform: translateY(-3px);
+}
 
 .btn-primary {
   background: var(--terracotta);
@@ -212,7 +225,9 @@ h3 {
   box-shadow: 0 12px 25px rgba(197, 107, 67, 0.28);
 }
 
-.btn-primary:hover { background: #a95434; }
+.btn-primary:hover {
+  background: #a95434;
+}
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.92);
@@ -225,7 +240,9 @@ h3 {
   box-shadow: 0 12px 25px rgba(47, 141, 109, 0.26);
 }
 
-.btn-map:hover { background: #236f55; }
+.btn-map:hover {
+  background: #236f55;
+}
 
 .distance-cards {
   margin-top: 38px;
@@ -611,7 +628,6 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-
 .lightbox-arrow {
   position: fixed;
   top: 50%;
@@ -639,29 +655,12 @@ h3 {
   right: 24px;
 }
 
-.lightbox-arrow:hover,
-.lightbox-close:hover {
+.lightbox-arrow:hover {
   transform: translateY(-50%) scale(1.05);
 }
 
 .lightbox-close:hover {
   transform: scale(1.05);
-}
-
-@media (max-width: 650px) {
-  .lightbox-arrow {
-    width: 44px;
-    height: 44px;
-    font-size: 2rem;
-  }
-
-  .lightbox-prev {
-    left: 10px;
-  }
-
-  .lightbox-next {
-    right: 10px;
-  }
 }
 
 .lightbox-close {
@@ -688,111 +687,6 @@ h3 {
   opacity: 1;
   transform: translateY(0);
 }
-
-@media (max-width: 1050px) {
-  .distance-cards,
-  .distance-strip {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .nav {
-    gap: 14px;
-  }
-}
-
-@media (max-width: 920px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav {
-    position: fixed;
-    top: 76px;
-    left: 6%;
-    right: 6%;
-    padding: 18px;
-    display: grid;
-    gap: 8px;
-    background: var(--white);
-    border-radius: 22px;
-    box-shadow: var(--shadow);
-    transform: translateY(-14px);
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.2s ease;
-  }
-
-  .nav.open {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-  }
-
-  .nav a {
-    padding: 10px 12px;
-  }
-
-  .two-columns,
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero {
-    min-height: auto;
-    padding-top: 126px;
-  }
-
-  .section {
-    padding: 76px 6%;
-  }
-}
-
-@media (max-width: 560px) {
-  .site-header {
-    padding: 0 4%;
-  }
-
-  .hero,
-  .section {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-
-  .distance-cards,
-  .distance-strip,
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-item.big,
-  .gallery-item.wide {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .gallery-item.wide img {
-    aspect-ratio: 1 / 1;
-  }
-
-  .reviews-box,
-  .contact-form {
-    padding: 30px 20px;
-  }
-
-  .hero-actions,
-  .booking-actions {
-    display: grid;
-  }
-
-  .btn {
-    width: 100%;
-  }
-}
-
 
 .excursions-section {
   background: var(--white);
@@ -835,88 +729,162 @@ h3 {
   color: var(--muted);
 }
 
-@media (max-width: 920px) {
-  .excursions-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 .whatsapp-info-link {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
+/* =========================
+   VERSIONE TABLET
+   Rimane ordinata ma non diventa una linea stretta
+   ========================= */
 
-/* Ottimizzazione telefono */
-img {
-  max-width: 100%;
-  height: auto;
+@media (max-width: 1050px) {
+  .distance-cards,
+  .distance-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav {
+    gap: 14px;
+  }
 }
 
-@media (max-width: 768px) {
+/* =========================
+   VERSIONE TELEFONO COME PC
+   Il sito mantiene la larghezza desktop.
+   Da telefono si può scorrere lateralmente.
+   ========================= */
+
+@media (max-width: 920px) {
+  html,
   body {
-    overflow-x: hidden;
+    width: 1180px;
+    min-width: 1180px;
+    overflow-x: auto;
   }
 
-  .container,
-  .nav-inner,
-  .hero-content,
+  body {
+    overflow-y: auto;
+  }
+
+  .site-header {
+    width: 1180px;
+    min-width: 1180px;
+    left: 0;
+    right: auto;
+  }
+
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .nav {
+    position: static;
+    display: flex !important;
+    align-items: center;
+    gap: 22px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav a {
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1180px;
+  }
+
   .two-columns {
-    width: 100%;
-    max-width: 100%;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
   }
 
-  .two-columns,
-  .hero-content,
-  .contact-section .two-columns {
-    grid-template-columns: 1fr !important;
-  }
-
-  .hero {
-    min-height: auto;
-    padding-top: 96px;
-  }
-
-  .hero-card,
-  .booking-card,
-  .info-card,
-  .contact-card {
-    width: 100%;
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gallery {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .gallery-item.big,
+  .gallery-item.big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
   .gallery-item.wide {
-    grid-column: auto !important;
-    grid-row: auto !important;
+    grid-column: span 2;
+  }
+
+  .gallery-item.wide img {
+    aspect-ratio: 2 / 1;
+  }
+
+  .excursions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding-top: 130px;
+  }
+
+  .section {
+    padding: 100px 6%;
+  }
+
+  .hero-actions,
+  .booking-actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+  .distance-cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .distance-strip {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .contact-list {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox {
+    width: 100vw;
+    min-width: 100vw;
   }
 
   .lightbox img,
   #lightboxImage {
-    max-width: 92vw;
-    max-height: 78vh;
+    max-width: 90vw;
+    max-height: 86vh;
   }
 
   .lightbox-arrow {
-    width: 42px;
-    height: 42px;
-    font-size: 2rem;
+    width: 54px;
+    height: 54px;
+    font-size: 2.6rem;
   }
 
   .lightbox-prev {
-    left: 8px;
+    left: 24px;
   }
 
   .lightbox-next {
-    right: 8px;
+    right: 24px;
   }
 }
